@@ -1,0 +1,97 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Font: Poppins */
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pokedex-container {
+    display: flex;
+    background-color: #d32f2f;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.pokedex-screen {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Increased width */
+    height: 500px; /* Increased height */
+}
+
+.pokedex-screen img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ffeb3b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pokedex-controls {
+    padding: 15px; /* Reduced padding */
+    background-color: #b71c1c;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    width: 270px; /* Adjusted width to be more compact */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pokedex-controls input[type="text"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 8px; /* Reduced margin for closer spacing */
+    box-sizing: border-box;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.pokedex-controls button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffeb3b;
+    color: #b71c1c;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 8px; /* Reduced margin for closer spacing */
+    font-size: 14px; /* Adjusted font size */
+}
+
+.pokemon-info p {
+    margin: 4px 0; /* Further reduced margin for closer spacing */
+    font-size: 14px; /* Adjusted font size */
+}
+
+.pokemon-info span {
+    font-weight: normal;
+}
